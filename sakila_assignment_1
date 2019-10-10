@@ -1,3 +1,4 @@
+----------------------------Q1--------------------------
 SELECT f.title,f.rating,c.name
 FROM film
 JOIN film_category 
@@ -8,7 +9,7 @@ WHERE rating = 'pg-13' AND name='comedy';
 
 
 
-
+------------------------Q2---------------------------------
 SELECT count(*) AS rented ,i.film_id ,f.title
 FROM rental
 JOIN inventory 
@@ -20,7 +21,7 @@ ORDER BY rented DESC
 LIMIT 3;
 
 
-
+--------------------------Q3--------------------
 SELECT c.first_name,c.last_name , co.country
 FROM rental
 JOIN inventory 
@@ -44,8 +45,7 @@ WHERE cat.name = 'sports' and co.country='india';
 
 
 
-
-
+--------------------------Q4------------------------
 SELECT c.first_name,c.last_name , co.country
 FROM rental
 JOIN inventory 
@@ -68,7 +68,7 @@ WHERE act.first_name= 'NICK' AND act.last_name='WAHLBERG' AND co.country='canada
 
 
 
-
+------------------------------Q5------------------------------------------
 SELECT count(*)
 FROM film f
 JOIN film_actor
